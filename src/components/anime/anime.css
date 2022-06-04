@@ -1,0 +1,44 @@
+#smoke1 {
+  animation: LeafAnime 2.5s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#smoke2 {
+  animation: LeafAnime 2.5s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+#me {
+  animation: MeAnime 1.5s ease infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes SmokeAnime1 {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes LeafAnime {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes MeAnime {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(3deg);
+  }
+}
